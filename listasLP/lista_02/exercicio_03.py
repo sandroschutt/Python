@@ -9,12 +9,12 @@ listaB = []
 listaC = []
 nunerosPerfeitos = []
 
-for a in range(4):
+for a in range(5):
     numeroA = int(input('Informe cinco números para a lista A: '))
     listaA.append(numeroA)
     listaC.append(numeroA)
 
-for b in range(4):
+for b in range(5):
     numeroB = int(input('Informe cinco números para a lista B: '))
     listaB.append(numeroB)
     listaC.append(numeroB)
