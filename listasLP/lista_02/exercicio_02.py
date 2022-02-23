@@ -19,9 +19,3 @@ while n > 0:
         print('A cor informada não está na lista.')
 
 print('O programa foi encerrado.')
-
-
-
-
-
-
