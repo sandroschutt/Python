@@ -4,21 +4,21 @@
 #b) soma dos números múltiplos de 3 da matriz;
 #c) média dos números da matriz;
 
-notasAlunos = [[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15]]
+matrizNumeros = [[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15]]
 multiplosDeTres = []
-mediaAlunos = []
+mediaMatriz = []
 
 for i in range(3):
     for j in range(5):
-        if notasAlunos[i][j] <= 1:
-            menorNota = notasAlunos[i][j]
+        if matrizNumeros[i][j] <= 1:
+            menorNota = matrizNumeros[i][j]
 
 for i in range(3):
     for j in range(5):
-        if notasAlunos[i][j] % 3 == 0:
-            multiplosDeTres.append(notasAlunos[i][j])
+        if matrizNumeros[i][j] % 3 == 0:
+            multiplosDeTres.append(matrizNumeros[i][j])
 
 for i in range(3):
-    mediaAlunos.append(sum(notasAlunos[i]))
+    mediaMatriz.append(sum(matrizNumeros[i]))
 
-print('Menor nota: ', menorNota, '\nSoma dos múltiplos de 3: ', sum(multiplosDeTres), '\nMédia das notas da matriz: ', (sum(mediaAlunos) / 15))
+print('Menor nota: ', menorNota, '\nSoma dos múltiplos de 3: ', sum(multiplosDeTres), '\nMédia das notas da matriz: ', (sum(mediaMatriz) / 15))
