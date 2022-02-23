@@ -7,10 +7,10 @@
 #e. faça uma listagem que imprima na tela (Nome Vlr do produto)
 
 listaProdutos = []
-ListaValores = []
-NomeValorProduto = []
+listaValores = []
+nomeValorProduto = []
 valoresAbaixoDez = []
-pam = []
+produtosAcimaMedia = []
 
 print('**REGISTRO DE PRODUTOS**')
 print('Digite 0 nos dois campos para encerrar o registro.')
@@ -18,29 +18,24 @@ print('Digite 0 nos dois campos para encerrar o registro.')
 for i in range(5):
     NomeProduto = str(input('Nome do produto: '))
     listaProdutos.append(NomeProduto)
-    NomeValorProduto.append(NomeProduto)
+    nomeValorProduto.append(NomeProduto)
     valor=float(input('Valor: '))
-    ListaValores.append(valor)
-    NomeValorProduto.append(valor)
+    listaValores.append(valor)
+    nomeValorProduto.append(valor)
     if valor<10.0 and valor>0:
         valoresAbaixoDez.append(valor)
-    if valor == max(ListaValores):
-        mvalor = valor
-        mproduto = produto
+    if valor == max(listaValores):
+        maiorValor = valor
+        produtoMaisCaro = produto
 
-pamc = (sum(ListaValores)/len(ListaValores))
-
-contador = len(ListaValores)
 x = 0
-
-while x < contador:
-    if ListaValores[x] > pamc:
-        prc = ListaValores[x]
-        pam.append(prc)
+while x < len(listaValores):
+    if listaValores[x] > mediaPrecos:
+        produtosAcimaMedia.append(listaValores[x])
     x+=1
 
 print('Quantidade de produtos abaixo de R$10.0: ', len(valoresAbaixoDez))
-print('Média de valor dos produtos: R$ %.2f' % pamc)
-print('Quantidade de produtos com valor acima da média: ', len(pam))
-print('O produto mais caro é ', mproduto,'no valor de R$', mvalor)
-print('Nome e valor dos produtos: ', NomeValorProduto)
+print('Média de valor dos produtos: R$ %.2f' % sum(listaValores) / len(listaValores))
+print('Quantidade de produtos com valor acima da média: ', len(produtosAcimaMedia))
+print('O produto mais caro é ', produtoMaisCaro,'no valor de R$', maiorValor)
+print('Nome e valor dos produtos: ', nomeValorProduto)
