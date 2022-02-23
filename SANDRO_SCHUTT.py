@@ -8,34 +8,34 @@
 # d. a quantidade de vendedores que venderam abaixo da média (2pts) FEITO
 # e. O maior valor de comissão e o nome do vendedor que recebeu (2pts)
 
-vendrs = []  # vendedores
-total_vendas = []  # total vendido
-comss = []  # lista destinada apenas para comissões
-nc = []  # nome e valor de comissão
-tc = []  # total de comissões pagas pela empresa
-vam = []  # vendas abaixo da média
+vendedores = []
+totalVendas = []
+listaComissoes = []  # lista destinada apenas para comissões
+nomeValorComissao = []  # nome e valor de comissão
+totalComissoes = []  # total de comissões pagas pela empresa
+vendasAbaixoMedia = []  # vendas abaixo da média
 i = 0
 # x=0
 while i < 5:
-    nvnd = str(input('Informe o nome do vendedor: '))
+    nomeVendedor = str(input('Informe o nome do vendedor: '))
     vendas = float(input('Informe o montante total vendido por ele: '))
-    com = vendas * 0.15  # calcula comissão
-    vendrs.append(nvnd)
-    total_vendas.append(vendas)
-    nc.append(nvnd)
-    nc.append(com)
-    tc.append(com)
-    comss.append(com)
-    med = sum(total_vendas) / len(total_vendas)  # calcula média das vendas
-    if vendas <= med:
-        vam.append(vendas)
-    if com == max(comss):
-        mc = com
-        mv = nvnd
+    comissao = vendas * 0.15  # calcula comissão
+    vendedores.append(nomeVendedor)
+    totalVendas.append(vendas)
+    nomeValorComissao.append(nomeVendedor)
+    nomeValorComissao.append(comissao)
+    totalComissoes.append(comissao)
+    listaComissoes.append(comissao)
+    media = sum(totalVendas) / len(totalVendas)  # calcula média das vendas
+    if vendas <= media:
+        vendasAbaixoMedia.append(vendas)
+    if com == max(listaComissoes):
+        maiorComissao = comissao
+        melhorVendedor = nomeVendedor
     i += 1
 
-print('Nome e valor da comissão dos vendedores: ', nc)
-print('Total da comissão paga pela empresa: %.2f' % sum(tc))
-print('Média das vendas brutas: %.2f' % med)
-print('Quantidade de vendedores que ficaram abaixo da média de vendas: %d' % len(vam))
-print('A maior comissão foi de R$', mc, 'do vendedor ', mv)
+print('Nome e valor da comissão dos vendedores: ', nomeValorComissao)
+print('Total da comissão paga pela empresa: %.2f' % sum(totalComissoes))
+print('Média das vendas brutas: %.2f' % media)
+print('Quantidade de vendedores que ficaram abaixo da média de vendas: %d' % len(vendasAbaixoMedia))
+print('A maior comissão foi de R$', maiorComissao, 'do vendedor ', melhorVendedor)
