@@ -8,20 +8,18 @@
 listaIdades = []
 idadeEntreVinteTrinta = []
 idadeMaiorQueMedia = []
-x = 0
-while x < 10:
+
+for i in range(10):
     idade = float(input('Informe a idade: '))
     listaIdades.append(idade)
     if idade > 19 and idade < 31:
         idadeEntreVinteTrinta.append(idade)
-    x += 1
-mg = (sum(listaIdades) / len(listaIdades))
-i = 0
-while i < 10:
-    if listaIdades[i] > mg:
-        M = listaIdades[i]
-        idadeMaiorQueMedia.append(M)
-    i += 1
+
+mediaIdades = (sum(listaIdades) / len(listaIdades))
+
+for i in range(10):
+    if listaIdades[i] > mediaIdades:
+        idadeMaiorQueMedia.append(listaIdades[i])
 
 print('Menor idade: ', min(listaIdades))
 print('Média das idades: ', (sum(listaIdades)/x))
