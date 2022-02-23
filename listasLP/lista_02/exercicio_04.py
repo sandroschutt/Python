@@ -15,6 +15,4 @@ for i in range(10):
 
 listaC = list(set(listaA).intersection(listaB))
 
-print(listaA)
-print(listaB)
-print(listaC)
+print('Lista A: ', listaA, '\nLista B: ', listaB, '\nLista C: ', listaC)
