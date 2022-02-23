@@ -15,7 +15,7 @@ while n > 0:
         print('A cor ', pesquisa, 'está presente na posição ',listaCores.index(pesquisa))
     if pesquisa == "FIM":
         n=0
-    if pesquisa not in listaCores:
+    else:
         print('A cor informada não está na lista.')
 
 print('O programa foi encerrado.')
