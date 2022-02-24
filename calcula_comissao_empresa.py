@@ -2,10 +2,10 @@
 # preencha também outra lista com total vendido por cada vendedor.
 # Cada vendedor recebe 15% de comissão sobre as vendas. Faça os seguintes cálculos
 # e mostre o resultado na tela (2pt):
-# a. Uma listagem com o nome e valor de comissão de cada vendedor (vendas *0.15) (2pt) FEITO
-# b. O total de comissão pago pela empresa (5 vendedores) (1pt) FEITO
-# c. a média das vendas (bruto) (1pt) FEITO
-# d. a quantidade de vendedores que venderam abaixo da média (2pts) FEITO
+# a. Uma listagem com o nome e valor de comissão de cada vendedor (vendas *0.15) (2pt)
+# b. O total de comissão pago pela empresa (5 vendedores) (1pt)
+# c. a média das vendas (bruto) (1pt)
+# d. a quantidade de vendedores que venderam abaixo da média (2pts)
 # e. O maior valor de comissão e o nome do vendedor que recebeu (2pts)
 
 vendedores = []
@@ -14,9 +14,8 @@ listaComissoes = []  # lista destinada apenas para comissões
 nomeValorComissao = []  # nome e valor de comissão
 totalComissoes = []  # total de comissões pagas pela empresa
 vendasAbaixoMedia = []  # vendas abaixo da média
-i = 0
-# x=0
-while i < 5:
+
+for i in range(5):
     nomeVendedor = str(input('Informe o nome do vendedor: '))
     vendas = float(input('Informe o montante total vendido por ele: '))
     comissao = vendas * 0.15  # calcula comissão
@@ -32,7 +31,6 @@ while i < 5:
     if com == max(listaComissoes):
         maiorComissao = comissao
         melhorVendedor = nomeVendedor
-    i += 1
 
 print('Nome e valor da comissão dos vendedores: ', nomeValorComissao)
 print('Total da comissão paga pela empresa: %.2f' % sum(totalComissoes))
