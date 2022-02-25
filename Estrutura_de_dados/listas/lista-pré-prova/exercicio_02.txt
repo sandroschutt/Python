@@ -1,0 +1,5 @@
+FOTOS
+
+Imagine que se tem um quadro de uma matriz 20x20, se tenho 7 fotos medindo 4x4,
+quantos quadros irei precisar para colocar as 7 fotos? Faça isso variando-se o tamanho do
+quadro e a quantidade de fotos
