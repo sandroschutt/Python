@@ -1,0 +1,29 @@
+CERVEJARIA BIERHOFF
+
+A cervejaria alemã BierHoff está iniciando suas atividades no Brasil e já pegou um grande
+cliente, uma tal de FIFA.
+
+O novo gerente, Mrs. Wanchopp, estima que a capacidade de produção seja de
+aproximadamente 10ml/s por segundo.
+
+Em determinados períodos o volume de cada garrafa produzida poderá variar. Por
+exemplo no período noturno, por ser um momento onde a concentração dos funcionários diminui,
+a capacidade de cada garrafa é de 1000 ml. Porém no período da manhã a capacidade de cada
+garrafa diminui para 355ml.
+
+Sua tarefa é criar um algoritmo para mostrar quantas garrafas ele produz em um
+determinado período de tempo conforme a capacidade de cada garrafa.
+
+Entrada
+O arquivo de entrada contém um único caso de teste. Cada caso inicia com um inteiro,
+C1 (3600 <= C1 <= 2592000) apontando o tempo que a cervejaria trabalhará e a capacidade da
+garrafa naquele momento CP(200<= CP <=2000)
+
+Saída
+Para cada conjunto de dados você deve apontar a quantidade de aproximada de garrafas
+produzidas.
+
+Exemplo
+Entrada     Saída
+3600|290    124,14
+7200|355    202.81
