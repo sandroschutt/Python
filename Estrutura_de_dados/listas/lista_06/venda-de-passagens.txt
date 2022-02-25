@@ -1,0 +1,35 @@
+====================
+Venda de passagens
+===================
+
+Todo mundo em algum momento já foi a rodoviária e ao chegar no guichê de comprar
+de passagens a atendente sempre pergunta: “Em que lugar o senhor(a) deseja se sentar?”.
+Baseado na figura abaixo, crie os seguintes procedimentos para a gestão da empresa
+de venda passagens:
+
+| 0 | 1 | 0 | 0 |
+| 0 | 0 | 0 | 1 |
+| 0 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 0 |
+| 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 0 |
+| 0 | 0 | 1 | 0 |
+| 0 | 1 | 0 | 0 |
+| 0 | 1 | 0 | 0 |
+
+Pergunte ao usuário em qual linha e coluna ele deseja se sentar?
+o Caso aquela “poltrona” estiver ocupada escrever na tela “procure outra
+poltrona”, senão, marcar a “poltrona” como ocupada.
+
+A cada interação, exibir as informações abaixo:
+
+* Exibir a quantidade de lugares ocupados.
+* Exibir a quantidade de lugares vazios;
+* Exibir o percentual de ocupação;
+* Exibir o total arrecadado de venda de passagens, partindo do princípio que os bancos da janela custam 10% a mais;
+
+Observações:
+
+* Não vender passagens para o lugar que já esteja ocupado;
+* Assuma que o número “1” indica lugar ocupado e “0” indica lugar desocupado
