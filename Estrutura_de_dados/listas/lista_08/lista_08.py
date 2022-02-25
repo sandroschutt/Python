@@ -13,29 +13,33 @@ def analisaPalavra():
 
      for i in range(len(palavra)):
         if palavra[i] == 'A':
-            qtdVogais = qtdVogais + 1
+            qtdVogais += 1
             vogais[0][0] += 1
         elif palavra[i] == 'E':
-            qtdVogais = qtdVogais + 1
+            qtdVogais += 1
             vogais[1][0] += 1
         elif palavra[i] == 'I':
-            qtdVogais = qtdVogais + 1
+            qtdVogais += 1
             vogais[2][0] += 1
         elif palavra[i] == 'O':
-            qtdVogais = qtdVogais + 1
+            qtdVogais += 1
             vogais[3][0] += 1
         elif palavra[i] == 'U':
-            qtdVogais = qtdVogais + 1
+            qtdVogais += 1
             vogais[0][0] += 1
         elif palavra[i] == " ":
-            qtdchar -=1
+            qtdchar -= 1
         else:
             qtdConsoantes += 1
 
      print("A quantidade de letras é %i" % qtdchar,
         "\nNº vogais: ", qtdVogais,
         "\nNº consoantes: ", qtdConsoantes,
-         "\n\nOcorrência de vogais:", "\nA = ", vogais[0], "\nE = ", vogais[1], "\nI = ", vogais[2], "\nO = ", vogais[3], "\nU = ", vogais[4])
+         "\n\nOcorrência de vogais:", "\nA = ",vogais[0],
+         "\nE = ", vogais[1],
+         "\nI = ", vogais[2],
+         "\nO = ", vogais[3],
+         "\nU = ", vogais[4])
          
      cifraPalavra(palavra)
 
