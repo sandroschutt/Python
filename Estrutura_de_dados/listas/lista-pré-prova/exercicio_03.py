@@ -1,7 +1,7 @@
 def calculaColisao(cenario):
     colide = []
     for i in range(4):
-        if cenario[1][x] - cenario[0][x] >= 2:
+        if cenario[1][i] - cenario[0][i] >= 2:
             saida = 0
             colide.append(saida)
         else:
