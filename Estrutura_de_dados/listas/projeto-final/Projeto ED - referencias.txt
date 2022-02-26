@@ -1,0 +1,28 @@
+Tema 01) População brasileira e americana, caracterpisticas,
+comparações como idade, longevidade, média salarial, etc
+
+ENTREGA 14/06 23:59h
+Apresentação dia 15/06 a partir das 19:15
+
+-Apresentação de contexto histórico, fontes de pesquisa e fontes de 
+dados apresentados (pelo menos duas fontes diferentes).
+
+Referências:
+https://data.worldbank.org/indicator/SP.DYN.LE00.IN?end=2019&locations=BR&start=1960&view=chart
+https://data.worldbank.org/indicator/SP.DYN.LE00.IN?end=2019&locations=US&start=1960
+
+https://data.worldbank.org/indicator/SP.DYN.TFRT.IN?end=2019&locations=BR&start=1960&view=chart
+https://data.worldbank.org/indicator/SP.DYN.TFRT.IN?end=2019&locations=US&start=1960
+
+https://data.worldbank.org/indicator/NY.ADJ.NNTY.PC.CD?end=2019&locations=BR&start=1989&view=chart
+https://data.worldbank.org/indicator/NY.ADJ.NNTY.PC.CD?end=2019&locations=US&start=1989
+
+https://www.cia.gov/the-world-factbook/countries/united-states/
+https://www.cia.gov/the-world-factbook/countries/brazil/
+https://www.cia.gov/the-world-factbook/field/median-age/country-comparison
+
+https://www.numbeo.com/cost-of-living/country_price_rankings?itemId=105
+
+https://www.kaggle.com/kashnitsky/topic-1-exploratory-data-analysis-with-pandas
+
+
