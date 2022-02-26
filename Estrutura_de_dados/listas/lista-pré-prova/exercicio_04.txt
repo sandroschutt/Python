@@ -1,0 +1,18 @@
+Desafio- Criar um algoritmo que faça a validação da senha e exiba a senha cifrada.Passos:
+
+1. Informe uma frase qualquer com no mínimo 25 e no máximo 30 caracteres;
+2. Os primeiros 4 caracteres obrigatoriamente deverão ter pelo menos 3 letras
+maiúsculas;
+3. Entre os caracteres 5 até o 10 obrigatoriamente deverão possuir pelo menos 4
+minúsculas;
+4. Entre os caracteres 11 até o 16 deverão possuir pelo menos 3 números;
+5. Entre os caracteres 17 até o 22 deverão ter pelos menos 3 caracteres especiais;
+6. Ao final você deverá apresentar a senha cifrada onde as letras deverão avançar 3
+posições e outros caracteres avançarão 2 posições;
+7. Por fim, apresentar os caracteres de maneira ordenada;
+
+Exemplo de entrada:
+ABC34efg45a1234qazx!#$12345
+
+Exemplo de saída cifrada:
+DEF56hij67d3456sd} %’(34567
