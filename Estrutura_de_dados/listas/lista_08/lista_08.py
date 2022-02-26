@@ -26,7 +26,7 @@ def analisaPalavra():
             vogais[3][0] += 1
         elif palavra[i] == 'U':
             qtdVogais += 1
-            vogais[0][0] += 1
+            vogais[4][0] += 1
         elif palavra[i] == " ":
             qtdchar -= 1
         else:
