@@ -12,11 +12,10 @@
 # Digite uma letra: S
 # -> Você errou pela 2ª vez. Tente de novo!
 
-# Importa palavras do arquivo 'listaPalavras.txt'
 import os
 from random import randint
 
-
+# Importa palavras do arquivo 'listaPalavras.txt'
 listaPalavras = []
 arquivo = open('/home/sschutt/Documentos/pratica_python/Strings/9/listaPalavras.txt', 'r')
 
